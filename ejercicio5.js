@@ -1,11 +1,12 @@
-function ejercicio5(){
-    var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K',
-    'E', 'T'];
-    var DNI = prompt ("el mensaje");
-    var posicion= DNI/23;
+function ejercicio5(params){
 
-    if (DNI<0 && DNI > 99999999){
-        DNI = prompt ("el número proporcionado no es válido");
+    let factor = prompt("Ingrese un número para calcular el factorial");
+
+    let producto = 1;
+    for (let i = 1; i<= factor; i++){
+        producto = producto * i;
 
     }
+
+    console.log ("El factorial de" + factor + "es: " + producto);
 }
