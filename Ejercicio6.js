@@ -1,5 +1,10 @@
 function ejercicio6(params){
 
+
+
+
+    
+
     let parámetro = prompt("Ingrese el número entero");
     let resul = paroImpar(parámetro);
 
