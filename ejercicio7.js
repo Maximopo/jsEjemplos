@@ -11,11 +11,11 @@ function ejercicio7(text){
 
     console.log(result);
 
-    if (cadena == Mayusculas) { 
+    if (cadena == var [Mayusculas]) { 
         cadena = prompt ("Esta cadena de textos esta formada por mayusculas");
     }
-    else if (cadena == Minusculas ) {
-        cadena = prompt ("Esta cadena de textos esta formada por minusculas")
+    else if (cadena == var [Minusculas] ) {
+        cadena = prompt ("Esta cadena de textos esta formada por minusculas");
     }
      else {
         cadena = prompt ("Esta cadena de textos esta formada por minusculas y Mayusculas");
