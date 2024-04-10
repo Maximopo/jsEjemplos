@@ -1,6 +1,6 @@
 function ejercicio10(){
 
-function simularLanzamiento() {
+function tiroDeDados() {
     let dado1 = Math.floor(Math.random() * 6) + 1;
     let dado2 = Math.floor(Math.random() * 6) + 1;
     
@@ -9,19 +9,19 @@ function simularLanzamiento() {
     return suma;
 }
 
-function contarApariciones() {
+function apariciones() {
     let resultados = Array(11).fill(0);
 
     
     for (let i = 0; i < 36000; i++) {
-        let suma = simularLanzamiento();
+        let suma = tiroDeDados();
         resultados[suma - 2]++; 
     }
 
     return resultados;
 }
 
-let resultados = contarApariciones();
+let resultados = apariciones();
 
 console.log("Número de apariciones de cada suma de los dados:");
 for (let i = 0; i < resultados.length; i++) {
