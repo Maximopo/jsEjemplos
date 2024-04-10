@@ -1,24 +1,20 @@
-function ejercicio7(){
-    var  Mayusculas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
-    'W', 'X', 'Y', 'Z'];
-    var  Minusculas = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
-    'w', 'x', 'y', 'z'];   
+function ejercicio8(){
 
-    let text = prompt("Ingrese una cadena de texto");
-    let resul = MayusMinus(text);
+    let texto = prompt("Ingrese una cadena de texto");
+    let resul = palindromo(texto);
 
     console.log(resul);
+
 }
 
-function MayusMinus(cadena) {
+function palindromo(cadena) {
+    cadena = cadena.toLowerCase().replace(/\s/g, '');
+    return cadena === cadena.split('').reverse().join('');
+}
 
-    if (cadena == Mayusculas) { 
-        return "Esta cadena de textos esta formada por mayusculas"
-    }
-    else if (cadena == minusculas ) {
-        return "Esta cadena de textos esta formada por minusculas"
-    }
-     else {
-        return "Esta cadena de textos esta formada por minusculas y Mayusculas"
-    }
- }
+var oracion = "La ruta nos aporto otro paso natural";
+if (palindromo(oracion)) {
+    console.log("La cadena es un palíndromo.");
+} else {
+    console.log("La cadena no es un palíndromo.");
+}
