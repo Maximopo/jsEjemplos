@@ -1,4 +1,3 @@
- 
 function ejercicio7(){
 
     let txt =prompt("Ingrese texto")
@@ -17,7 +16,7 @@ function ejercicio7(){
     } else if (txt.charAt(i)== txt.charAt(i).toLowerCase()){
          min++;       
     }    
-}
+
     }
 if (may == 0) {
     return "son todas minusculas"
@@ -26,4 +25,4 @@ if (may == 0) {
 } else {
     return "son mayusculas y minusculas"
 }
-
+    }
