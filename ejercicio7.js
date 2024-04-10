@@ -1,24 +1,29 @@
+ 
 function ejercicio7(){
-    var  Mayusculas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
-    'W', 'X', 'Y', 'Z'];
-    var  Minusculas = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
-    'w', 'x', 'y', 'z'];
+
+    let txt =prompt("Ingrese texto")
     
-    var cadena = [Mayusculas || Minusculas];
+    let result=mayusmin(txt);
 
-    let text = prompt("Ingrese una cadena de texto");
-    let result = MayusMinus(text);
-
-    console.log(result);
-}
-function MayusMinus(cadena){
-    if (cadena == Mayusculas) { 
-        return "Esta cadena de textos esta formada por mayusculas"
-    }
-    else if (cadena == Minusculas ) {
-        return "Esta cadena de textos esta formada por minusculas"
-    }
-     else {
-        return "Esta cadena de textos esta formada por minusculas y Mayusculas"
-    }
+    console.log (result);
  }
+    function mayusmin(txt){
+    let may = 0;
+    let min = 0;
+        
+    for (let i = 0; i < txt.length; i++) {
+    if (txt.charAt(i)== txt.charAt(i).toUpperCase()) {
+        may++;    
+    } else if (txt.charAt(i)== txt.charAt(i).toLowerCase()){
+         min++;       
+    }    
+}
+    }
+if (may == 0) {
+    return "son todas minusculas"
+} else if (min == 0) {
+    return "son todas mayusculas"
+} else {
+    return "son mayusculas y minusculas"
+}
+
