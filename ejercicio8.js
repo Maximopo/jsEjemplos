@@ -12,7 +12,6 @@ function palindromo(cadena) {
     return cadena === cadena.split('').reverse().join('');
 }
 
-var oracion = "La ruta nos aporto otro paso natural";
 if (palindromo(oracion)) {
     console.log("La cadena es un palíndromo.");
 } else {
