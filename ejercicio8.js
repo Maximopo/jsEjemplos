@@ -1,9 +1,11 @@
 function ejercicio8(){
-    
     function palindromo(cadena) {
-        
         const cadenaProcesada = cadena.toLowerCase().replace(/[^a-z0-9]/g, '');
+        
+        
         const cadenaInvertida = cadenaProcesada.split('').reverse().join('');
+        
+        
         return cadenaProcesada === cadenaInvertida;
     }
     
@@ -15,5 +17,9 @@ function ejercicio8(){
     } else {
         console.log("La cadena no es un palíndromo.");
     }
+
     
 }
+
+
+
